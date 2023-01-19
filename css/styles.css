@@ -24,16 +24,15 @@ video {
 
 /* HOME*/
 .home {
-    /* margin-top: -45%; */
+    display: flex;
+    justify-content: space-around;
 }
 /* MENU */
 
-/* @media screen and (max-width: 700px) {
-    body {
-        padding: 170px 0 0 0;
-        width: 100%
-    }
-} */
+.logo:hover{
+    -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+    transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
 
 a {
     color: inherit;
@@ -43,8 +42,8 @@ a {
 .menu-open-button {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 100%;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin-left: -40px;
     position: absolute;
     color: #FFFFFF;
@@ -115,7 +114,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 80px;
+    width: 100px;
     height: 80px;
     text-align: center;
     box-sizing: border-box;
