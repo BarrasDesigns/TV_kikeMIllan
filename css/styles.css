@@ -20,7 +20,7 @@ video {
     transform: translateX(calc((100% - 100vw) / 2));
     z-index: -2;
   }
-  
+
 
 /* TARJETAS */
 
@@ -40,7 +40,7 @@ video {
     scroll-snap-align: start;
     border-radius: 50px;
     width: 572px;
-    height: 278px;
+    height: 196px;
     border-radius: 20%;
 }
 
