@@ -1,0 +1,153 @@
+:root {
+    --ColordeFondo: rgb(70, 126, 211);
+
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--ColordeFondo);
+}
+/* VIDEO DE FONDO */
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+  }
+  
+
+/* TARJETAS */
+
+.container {
+    display: flex;
+    overflow-x: scroll;
+    max-width: 100%;
+    height: 310px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    column-gap: 10px;
+}
+
+.tarjeta {
+    padding: 50px;
+    text-align: center;
+    scroll-snap-align: start;
+    border-radius: 50px;
+    width: 572px;
+    height: 278px;
+    border-radius: 20%;
+}
+
+.tarjeta h2 {
+    margin-top: -40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+a>p {
+    text-transform: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.tarjeta:nth-child(1) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/1.jpeg");
+    background-position: center center;
+    -webkit-filter: blur(2px);
+    transition: 1s ease;
+}
+
+.tarjeta:nth-child(1):hover {
+    transition: 1s ease;
+    -webkit-filter: blur(0px);
+    cursor: pointer;
+
+}
+
+.tarjeta:nth-child(2) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/2.jpeg");
+    background-position: center center;
+    -webkit-filter: blur(2px);
+    transition: 1s ease;
+}
+
+.tarjeta:nth-child(2):hover {
+    background-color: rgba(0, 0, 0, .3);
+    transition: 1s ease;
+    -webkit-filter: blur(0px);
+    cursor: pointer;
+
+}
+
+
+.tarjeta:nth-child(3) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/3.jpeg");
+    background-position: center center;
+    -webkit-filter: blur(2px);
+    transition: 1s ease;
+}
+
+.tarjeta:nth-child(3):hover {
+    background-color: rgba(0, 0, 0, .3);
+    transition: 1s ease;
+    -webkit-filter: blur(0px);
+    cursor: pointer;
+
+}
+
+.tarjeta:nth-child(4) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/4.jpeg");
+    background-position: center center;
+    -webkit-filter: blur(2px);
+    transition: 1s ease;
+}
+
+.tarjeta:nth-child(4):hover {
+    background-color: rgba(0, 0, 0, .3);
+    transition: 1s ease;
+    -webkit-filter: blur(0px);
+    cursor: pointer;
+
+}
+
+.tarjeta:nth-child(5) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/5.jpeg");
+    background-position: center center;
+    -webkit-filter: blur(2px);
+    transition: 1s ease;
+}
+
+.tarjeta:nth-child(5):hover {
+    background-color: rgba(0, 0, 0, .3);
+    transition: 1s ease;
+    -webkit-filter: blur(0px);
+    cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+    .tarjeta {
+        -webkit-filter: blur(0px) !important;
+    }
+}
+
+/* TERMINA TARJETAS */
