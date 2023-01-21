@@ -3,7 +3,8 @@
     --LetraBlanca: #FFFF;
     /* --fondo: rgba(255, 255, 255, 0.3); */
     --fondo2: rgba(255, 255, 255, 0.3);
-    --enlaces: rgb(190, 53, 218);
+    --enlaces: rgb(162, 54, 184);
+    --enlacesHover: rgba(190, 53, 218, 0.4);
 }
 
 /* GLOBALES */
@@ -278,68 +279,74 @@ a {
 }
 
 .blue {
-    background-color: #669AE1;
+    background-color: var(--enlaces);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .blue:hover {
+    background-color: var(--enlacesHover);
     color: #669AE1;
     text-shadow: none;
 }
 
 .green {
-    background-color: #70CC72;
+    background-color: var(--enlaces);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .green:hover {
+    background-color: var(--enlacesHover);
     color: #70CC72;
     text-shadow: none;
 }
 
 .red {
-    background-color: #FE4365;
+    background-color: var(--enlaces);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .red:hover {
+    background-color: var(--enlacesHover);
     color: #FE4365;
     text-shadow: none;
 }
 
 .purple {
-    background-color: #C49CDE;
+    background-color: var(--enlaces);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .purple:hover {
+    background-color: var(--enlacesHover);
     color: #C49CDE;
     text-shadow: none;
 }
 
 .orange {
-    background-color: #FC913A;
+    background-color: var(--enlaces);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .orange:hover {
+    background-color: var(--enlacesHover);
     color: #FC913A;
     text-shadow: none;
 }
 
-.lightblue {
-    background-color: #62C2E4;
+.lightgreen {
+    background-color: var(--enlaces);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.lightblue:hover {
-    color: #62C2E4;
+.lightgreen:hover {
+    background-color: var(--enlacesHover);
+    color: #62e47e;
     text-shadow: none;
 }
 
