@@ -1,9 +1,8 @@
 :root {
-    --ColordeFondo: rgb(70, 126, 211);
     --ColorLetra: rgb(0, 0, 0);
     --LetraBlanca: #FFFF;
-    --fondo: rgba(255, 255, 255, 0.3);
-    --fondo2: rgba(255, 255, 255, 0.5);
+    /* --fondo: rgba(255, 255, 255, 0.3); */
+    --fondo2: rgba(255, 255, 255, 0.3);
     --enlaces: rgb(190, 53, 218);
 }
 
@@ -23,24 +22,21 @@ html {
     box-sizing: inherit;
 }
 
+.wrapper {
+    margin-left: 2.5%;
+    width: 95%;
+    border-radius: 5%;
+    background-color: var(--fondo2);
+}
+
 body {
-    background-color: var(--ColordeFondo);
     text-align: center;
 }
 
 .texto1 {
-    font-size: 12px;
+    font-size: 15px;
     color: var(--ColorLetra);
 }
-
-.texto {
-    font-size: 12px;
-    color: var(--ColorLetra);
-    background-color: var(--fondo2);
-
-}
-
-.titulo {}
 
 .title {
     color: var(--LetraBlanca);
@@ -62,7 +58,7 @@ video {
 .home {
     display: flex;
     justify-content: space-around;
-    background-color: var(--fondo);
+    /* background-color: var(--fondo); */
 }
 
 /* FIN DE HOME */
@@ -74,7 +70,7 @@ a {
 
 .menu-item,
 .menu-open-button {
-    background: #EEEEEE;
+    background: var(--enlaces);
     border-radius: 100%;
     width: 80px;
     height: 80px;
@@ -98,7 +94,7 @@ a {
 .lines {
     width: 25px;
     height: 3px;
-    background: #596778;
+    background: #ffffff;
     display: block;
     position: absolute;
     top: 50%;
@@ -369,7 +365,7 @@ a {
 .contenedor {
     display: flex;
     justify-content: space-around;
-    background-color: var(--fondo2);
+    /* background-color: var(--fondo2); */
 }
 
 .contFotoKike {
@@ -391,7 +387,7 @@ a {
     scroll-snap-type: x mandatory;
     scroll-padding: 25px;
     column-gap: 10px;
-    /* margin-top: 233px; */
+    margin-top: 20px;
 }
 
 .tarjeta {
@@ -511,3 +507,25 @@ a>p {
 }
 
 /* TERMINA TARJETAS */
+
+/* FOOTER */
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.textoFooter {
+    text-decoration: none;
+    color: var(--LetraBlanca);
+}
+
+.imagenFooter {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon {
+    max-width: 50px;
+
+}
