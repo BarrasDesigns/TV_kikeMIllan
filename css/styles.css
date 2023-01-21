@@ -39,10 +39,12 @@ body {
     color: var(--ColorLetra);
 }
 
-.title {
+.title,
+.subtitle {
     color: var(--LetraBlanca);
     text-align: center;
 }
+
 
 /* VIDEO DE FONDO */
 video {
