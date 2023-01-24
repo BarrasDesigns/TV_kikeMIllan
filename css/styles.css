@@ -5,7 +5,7 @@
     --fondo2: rgba(255, 255, 255, 0.3);
     --enlaces: rgb(162, 54, 184);
     --enlacesHover: rgba(190, 53, 218, 0.4);
-    --cardbackground-color:#c2a9b1;
+    --cardbackground-color: #c2a9b1;
 }
 
 /* GLOBALES */
@@ -22,6 +22,10 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+#audio {
+    display: none;
 }
 
 .wrapper {

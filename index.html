@@ -35,7 +35,10 @@
         <main>
             <div class="contMenu">
                 <nav class="menu">
-                    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                    <input onclick="reproduce()" type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                    <audio id="audio" controls>
+                        <source type="audio/wav" src="./audio/WhatsApp Audio 2023-01-24 at 10.26.32 AM.ogg">
+                    </audio>
                     <label class="menu-open-button" for="menu-open">
                         <span class="lines line-1"></span>
                         <span class="lines line-2"></span>
@@ -431,7 +434,21 @@
     </footer>
 
 
+    <script>
+        const audio = document.getElementById("audio");
+        const btn = document.getElementById("menu-open");
 
+        function reproduce() {
+
+            if (btn.click) {
+                audio.play();
+
+            } else {
+                audio.stop();
+            }
+        }
+
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
