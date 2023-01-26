@@ -18,8 +18,7 @@
 </head>
 
 <body>
-    <video src="./video/video3.mp4" autoplay="true" muted="true" loop="true"></video>
-    <!-- <div class="fondo"> -->
+    <div class="fondo">
         <div class="wrapper">
 
             <header>
@@ -33,14 +32,22 @@
                     </div>
                 </section>
             </header>
+            <div class="mediaContainer">
+
+                <video id="video" autoplay>
+                    <source id="mp4_src" src="./video/introKike.mp4" type="video/mp4" loop="true">
+                    <!-- <source id="ogg_src"  src="mov_bbb.ogg" type="video/ogg"> -->
+                    Your browser does not support the video tag.
+                </video>
+                <audio id="audio" controls>
+                    <source type="audio/wav" src="./audio/kikeMillan.mp3">
+                </audio>
+            </div>
             <main>
                 <div class="contMenu">
                     <nav class="menu">
                         <input onclick="reproduce()" type="checkbox" href="#" class="menu-open" name="menu-open"
                             id="menu-open" />
-                        <audio id="audio" controls>
-                            <source type="audio/wav" src="./audio/kikeMillan.mp3">
-                        </audio>
                         <label class="menu-open-button" for="menu-open">
                             <span class="lines line-1"></span>
                             <span class="lines line-2"></span>
@@ -110,7 +117,8 @@
                     <h2 class="title">¿Qué es la hipnosis?</h2>
                 </div>
 
-                <div class="card" style="background-color:var(--cardbackground-color)!important;">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
                     <img src="./img/1A.jpeg" class="card-img-top" alt="astral">
                     <div class="card-body">
                         <p class="card-text">La hipnosis es un estado de adormecimiento o ensoñación parecido al del
@@ -136,8 +144,9 @@
                     <h2 class="title">¿Cuáles son los mitos y realidades de la hipnosis?</h2>
                 </div>
 
-                <div class="card" style="background-color:var(--cardbackground-color)!important;">
-                    <img src="./img/2A.jpeg" class="card-img-top" alt="hipnosis">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
+                    <img src="./img/kikeFlordelaVida.png" class="card-img-top" alt="hipnosis">
                     <div class="card-body">
                         <p class="card-text">
 
@@ -206,7 +215,8 @@
                 </div>
 
 
-                <div class="card" style="background-color:var(--cardbackground-color)!important;">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
                     <img src="./img/therapy.jpg" class="card-img-top" alt="terapia">
                     <div class="card-body">
                         <p class="card-text">
@@ -258,7 +268,8 @@
                     </h2>
                     <h3 class="subtitle">Siéntete con más energía y una mejor salud.</h3>
                 </div>
-                <div class="card" style="background-color:var(--cardbackground-color)!important;">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
                     <img src="./img/medallones.jpeg" class="card-img-top" alt="medallones">
                     <div class="card-body">
                         <p class="card-text">
@@ -282,7 +293,8 @@
                     <h2 class="title">¿De qué están hechos los medallones cuánticos?
                     </h2>
                 </div>
-                <div class="card" style="background-color:var(--cardbackground-color)!important;">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
                     <img src="./img/medallones2.jpeg" class="card-img-top" alt="medallones2">
                     <div class="card-body">
                         <p class="card-text">
@@ -332,7 +344,8 @@
                     <h2 class="title">Evidencia de flujo sanguíneo mejorado en el cuerpo
                     </h2>
                 </div>
-                <div class="card" style="background-color:var(--cardbackground-color)!important;">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
                     <img src="./img/medallones3.jpeg" class="card-img-top" alt="medallones3">
                     <div class="card-body">
                         <p class="card-text">
@@ -354,8 +367,9 @@
                     </h2>
                 </div>
 
-                <div class="card" style="background-color:var(--cardbackground-color)!important;">
-                    <img src="./img/medallones4.jpeg" class="card-img-top" alt="medallones4">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
+                    <img src="./img/kikeFinal.jpeg" class="card-img-top" alt="medallones4">
                     <div class="card-body">
                         <p class="card-text">
                             Los medallones son recargables ya vienen preparados con la tecnología mas avanzada.</p>
@@ -417,54 +431,67 @@
                 </div>
             </main>
         </div>
-    
 
-    <div class="container">
-        <div class="tarjeta">
-            <!-- <h2>Titulo1</h2> -->
+
+        <div class="container">
+            <div class="tarjeta">
+                <!-- <h2>Titulo1</h2> -->
+            </div>
+            <div class="tarjeta">
+                <!-- <h2>Titulo2</h2> -->
+            </div>
+            <div class="tarjeta">
+                <!-- <h2>Titulo3</h2> -->
+            </div>
+            <div class="tarjeta">
+                <!-- <h2>Titulo4</h2> -->
+            </div>
+            <div class="tarjeta">
+                <!-- <h2>Titulo5</h2> -->
+            </div>
         </div>
-        <div class="tarjeta">
-            <!-- <h2>Titulo2</h2> -->
-        </div>
-        <div class="tarjeta">
-            <!-- <h2>Titulo3</h2> -->
-        </div>
-        <div class="tarjeta">
-            <!-- <h2>Titulo4</h2> -->
-        </div>
-        <div class="tarjeta">
-            <!-- <h2>Titulo5</h2> -->
-        </div>
+
+        <footer>
+            <div class="links">
+                <a href="https://www.barras-designs.com.mx/">
+                    <div class="textoFooter">
+                        Desarrollado por Barras Designs
+                    </div>
+                    <div class="imagenFooter">
+                        <img class="icon" src="./img/bdLogo.png" alt="BDLogo">
+
+                    </div>
+                </a>
+            </div>
+        </footer>
+
     </div>
-
-    <footer>
-        <div class="links">
-            <a href="https://www.barras-designs.com.mx/">
-                <div class="textoFooter" >
-                    Desarrollado por Barras Designs
-                </div>
-                <div class="imagenFooter">
-                    <img class="icon" src="./img/bdLogo.png" alt="BDLogo">
-
-                </div>
-            </a>
-        </div>
-    </footer>
-
-<!-- </div> -->
     <script>
         const audio = document.getElementById("audio");
+        const video = document.getElementById("video");
         const btn = document.getElementById("menu-open");
 
         function reproduce() {
 
             if (btn.click) {
+                video.play();
+                if (video.style.display === "none") {
+                    video.style.display = "block";
+                } else {
+                    video.style.display = "none";
+                }
+                
                 audio.play();
 
             } else {
                 audio.stop();
+                video.stop();
             }
         }
+
+        // if (reproduce()) {
+        //     const y = document.getElementById("video");
+        // }
 
     </script>
 
