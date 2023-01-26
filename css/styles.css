@@ -9,6 +9,16 @@
 }
 
 /* GLOBALES */
+.fondo {
+    background-image: url(../img/purplegalaxy2.jpg);
+    background-repeat: repeat-y;
+    min-height: 100%;
+    max-width: 100%;
+    position: center center;
+    /* position: fixed; */
+    z-index: 2;
+}
+
 img {
     width: 100%;
 }
