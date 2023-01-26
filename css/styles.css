@@ -1,5 +1,4 @@
 :root {
-    --ColorLetra: rgb(0, 0, 0);
     --LetraBlanca: #FFFF;
     /* --fondo: rgba(255, 255, 255, 0.3); */
     --fondo2: rgba(255, 255, 255, 0.3);
@@ -18,7 +17,9 @@
     /* position: fixed; */
     z-index: 2;
 }
-
+a{
+    text-decoration: none !important;
+}
 img {
     width: 100%;
 }
@@ -50,13 +51,13 @@ body {
 }
 
 .texto1 {
-    font-size: 15px;
-    color: var(--ColorLetra);
+    font-size: 20px;
+    color: var(--LetraBlanca);
 }
 
 .title,
 .subtitle {
-    color: var(--LetraBlanca);
+    color: var(--LetraBlanca) !important;
     text-align: center;
 }
 
@@ -539,14 +540,14 @@ a>p {
 }
 
 .textoFooter {
-    text-decoration: none;
     color: var(--LetraBlanca);
+    
 }
 
 .imagenFooter {
     display: flex;
     justify-content: center;
-
+    
 }
 
 .icon {
