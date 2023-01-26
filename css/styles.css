@@ -1,22 +1,21 @@
 :root {
-    --LetraBlanca: #FFFF;
+    --LetraBlanca: rgba(93, 2, 153, 0.87);
     /* --fondo: rgba(255, 255, 255, 0.3); */
-    --fondo2: rgba(255, 255, 255, 0.3);
+    --fondo2: rgba(255, 255, 255, 0.5);
     --enlaces: rgb(162, 54, 184);
     --enlacesHover: rgba(190, 53, 218, 0.4);
     --cardbackground-color: #c2a9b1;
 }
 
 /* GLOBALES */
-.fondo {
+/* .fondo {
     background-image: url(../img/purplegalaxy2.jpg);
     background-repeat: repeat-y;
     min-height: 100%;
     max-width: 100%;
     position: center center;
-    /* position: fixed; */
     z-index: 2;
-}
+} */
 a{
     text-decoration: none !important;
 }
