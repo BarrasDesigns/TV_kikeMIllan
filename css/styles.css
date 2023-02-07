@@ -426,15 +426,15 @@ a {
 }
 
 /* VIDEO TESTIMONIO */
-.contVideo {
-    display: flex;
-    justify-content: center;
-}
 .entrevista {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.contVideo {
+    display: flex;
+    justify-content: center;
 }
 h2 {
     color: var(--tituloShopCards)!important;
@@ -541,7 +541,7 @@ a>p {
 .tarjeta:nth-child(4) {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/4.jpg");
+    background-image: url("../img/4.jpeg");
     background-position: center center;
     -webkit-filter: blur(2px);
     transition: 1s ease;
