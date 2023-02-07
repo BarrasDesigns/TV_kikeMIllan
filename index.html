@@ -32,28 +32,9 @@
                     </div>
                 </section>
             </header>
-            <div class="titulo">
-                <h2 class="title">¿QUIÉN ES KIKE MILLÁN?</h2>
-            </div>
-            <section class="intro">
-                    <button onclick="intro()" id="btnIntro" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                        d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
-                        <rect x="3" y="6" width="12" height="12" rx="2" />
-                    </svg>
-                </button>
-            </section>
+
             <div class="mediaContainer">
 
-                <video class="video1" controls="true" width="320" height="260" id="intro" autoplay="true" loop="true">
-                    <source id="mp4_src" src="./video/introKike2.mp4" type="video/mp4">
-                    <!-- <source id="ogg_src"  src="mov_bbb.ogg" type="video/ogg"> -->
-                    Tu explorador no soporta este formato de video.
-                </video>
                 <audio id="audio" controls>
                     <source type="audio/wav" src="./audio/kikeMillan3_final.mp3">
                 </audio>
@@ -124,6 +105,28 @@
                         trayectoria aportando ayuda a la Humanidad.
                         Embajador Humanitario 2021 vitalicio de la buena voluntad y benevolencia.</p>
                 </div>
+                <div class="titulo">
+                    <h2 class="title" style="text-transform: uppercase;">Retiros</h2>
+                </div>
+                <div class="introContainer">
+                    <div class="intro">
+                        <button onclick="intro()" id="btnIntro" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
+                                <rect x="3" y="6" width="12" height="12" rx="2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <video class="video1" width="460" height="320" controls="true" id="intro" autoplay="true" loop="true">
+                        <source id="mp4_src" src="./video/introKike2.mp4" type="video/mp4">
+                        <!-- <source id="ogg_src"  src="mov_bbb.ogg" type="video/ogg"> -->
+                        Tu explorador no soporta este formato de video.
+                    </video>
+                </div>
 
                 <section style="margin-bottom: 14px;" id="sec3" class="section">
 
@@ -132,19 +135,22 @@
                             <h2 class="title" style="text-transform: uppercase;">Testimonio
                             </h2>
                         </div>
-                        <a id="btnTestimonio" href="#">
-                            <i>
+                        <!-- <a id="btnTestimonio" href="#"> -->
+                        <button type="button" id="btnTestimonio">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video"
-                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
-                                    <rect x="3" y="6" width="12" height="12" rx="2" />
-                                </svg>
-                            </i>
-                        </a>
+                            <!-- <i> -->
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
+                                <rect x="3" y="6" width="12" height="12" rx="2" />
+                            </svg>
+                            <!-- </i> -->
+                        </button>
+                        <!-- </a> -->
                     </div>
 
                     <div class="contVideo">
@@ -472,6 +478,10 @@
                     <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100063640953633&mibextid=LQQJ4d">
 
                         <h2>Velas REIKI</h2>
+                    </a>
+                    <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100057440478391&mibextid=LQQJ4d">
+
+                        <h2>Pulseras REIKI</h2>
                     </a>
                 </div>
             </main>
