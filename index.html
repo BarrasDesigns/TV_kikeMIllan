@@ -32,9 +32,24 @@
                     </div>
                 </section>
             </header>
+            <div class="titulo">
+                <h2 class="title">¿QUIÉN ES KIKE MILLÁN?</h2>
+            </div>
+            <section class="intro">
+                    <button onclick="intro()" id="btnIntro" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                        d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
+                        <rect x="3" y="6" width="12" height="12" rx="2" />
+                    </svg>
+                </button>
+            </section>
             <div class="mediaContainer">
 
-                <video class="videoIntro" id="video" autoplay="true" muted="true" loop="true">
+                <video class="video1" controls="true" width="320" height="260" id="intro" autoplay="true" loop="true">
                     <source id="mp4_src" src="./video/introKike2.mp4" type="video/mp4">
                     <!-- <source id="ogg_src"  src="mov_bbb.ogg" type="video/ogg"> -->
                     Tu explorador no soporta este formato de video.
@@ -117,21 +132,23 @@
                             <h2 class="title" style="text-transform: uppercase;">Testimonio
                             </h2>
                         </div>
-                        <a id="fullscreen" href="#">
+                        <a id="btnTestimonio" href="#">
                             <i>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video"
+                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
                                     <rect x="3" y="6" width="12" height="12" rx="2" />
-                                  </svg>
+                                </svg>
                             </i>
-                            <!-- <img class="icons" src="./img/video.svg" alt="videoplayer"> -->
                         </a>
                     </div>
 
                     <div class="contVideo">
-                        <video id="mivideo" controls="true" width="320" height="260" class="contVideo">
+                        <video id="testimonio" controls="true" width="320" height="260" class="contVideo">
 
                             <source class="icon" src="./video/testimonio.mp4" poster="#" type="video/mp4" />
                         </video>
@@ -475,28 +492,23 @@
         </div>
     </div>
 
-
-
-
-
     </div>
     <script>
         const audio = document.getElementById("audio");
-        const video = document.getElementById("video");
+        const videoIntro = document.getElementById("intro");
         const btn = document.getElementById("menu-open");
+        const btnIntro = document.getElementById("btnIntro");
 
-        function reproduce() {
-
-            if (btn.click) {
-
-                video.style.display = "block";
-
-                video.play();
-
+        function intro() {
+            if (btnIntro.click) {
+                videoIntro.style.display = "block";
+                videoIntro.play();
             }
-
-            audio.play();
-
+        }
+        function reproduce() {
+            if (btn.click) {
+                audio.play();
+            }
         }
 
     </script>

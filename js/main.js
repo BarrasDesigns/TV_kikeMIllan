@@ -1,4 +1,4 @@
-// REPRODUCE VIDEO 
+// REPRODUCE VIDEO 2
 function getFullscreenElement() {
     return document.fullscreenElement
     || document.webkitFullscreenElement
@@ -6,23 +6,23 @@ function getFullscreenElement() {
     || document.msFullscreenElement
 }
 
-function iniciar() { 
-    let boton=document.getElementById('fullscreen'); 
-    boton.addEventListener('click', presionar, false); 
+function iniciarVideo2() { 
+    let boton=document.getElementById('btnTestimonio'); 
+    boton.addEventListener('click', iniciarTestimonio, false); 
  } 
- function presionar() { 
-    let video=document.getElementById('mivideo'); 
-    video.play(); 
+ function iniciarTestimonio() { 
+    let video2=document.getElementById('testimonio'); 
+    video2.play(); 
  } 
- window.addEventListener('load', iniciar, false); 
+ window.addEventListener('load', iniciarVideo2, false); 
 
 function toggleFullscreen() {
     if (getFullscreenElement()) {
         document.exitFullscreen();
     } else {
-        document.getElementById("mivideo").requestFullscreen().catch(console.log);
-        document.getElementById("mivideo").requestFullscreen().catch((e) => {
-            document.getElementById("mivideo").style.display = "block";
+        document.getElementById("testimonio").requestFullscreen().catch(console.log);
+        document.getElementById("testimonio").requestFullscreen().catch((e) => {
+            document.getElementById("testimonio").style.display = "block";
             HTMLMediaElement.play();
         });
     }
@@ -36,9 +36,9 @@ function addEvent(element, evnt, funct){
   }
   
   addEvent(
-      document.getElementById('fullscreen'),
+      document.getElementById('btnTestimonio'),
       'click',
       function () { toggleFullscreen();  }
   );
 
-  document.getElementById("mivideo").style.display = "none";
+  document.getElementById("testimonio").style.display = "none";
