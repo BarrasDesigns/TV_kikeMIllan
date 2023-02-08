@@ -574,7 +574,6 @@ a>p {
     cursor: pointer;
 
 }
-
 .tarjeta:nth-child(4) {
     background-repeat: no-repeat;
     background-size: cover;
@@ -602,6 +601,23 @@ a>p {
 }
 
 .tarjeta:nth-child(5):hover {
+    background-color: rgba(0, 0, 0, .3);
+    transition: 1s ease;
+    -webkit-filter: blur(0px);
+    cursor: pointer;
+
+}
+
+.tarjeta:nth-child(6) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/6.jpeg");
+    background-position: center center;
+    -webkit-filter: blur(2px);
+    transition: 1s ease;
+}
+
+.tarjeta:nth-child(6):hover {
     background-color: rgba(0, 0, 0, .3);
     transition: 1s ease;
     -webkit-filter: blur(0px);
