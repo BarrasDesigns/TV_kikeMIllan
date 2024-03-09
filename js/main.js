@@ -42,3 +42,46 @@ function addEvent(element, evnt, funct){
   );
 
   document.getElementById("testimonio").style.display = "none";
+
+//   ABRE MODALES
+
+  const toggleModal1 = ((e) => {
+    const modal = document.getElementById("modal__KikeMillan");
+    if (modal.style.display === "none") {
+      modal.style.display = "block";
+      trapped = trapFocus(modal);
+    } else {
+      modal.style.display = "none";
+      trapped.onClose();
+    }
+  })
+  const toggleModal2 = ((e) => {
+    const modal = document.getElementById("modal__hipnosis");
+    if (modal.style.display === "none") {
+      modal.style.display = "block";
+      trapped = trapFocus(modal);
+    } else {
+      modal.style.display = "none";
+      trapped.onClose();
+    }
+  })
+  const toggleModal3 = ((e) => {
+    const modal = document.getElementById("modal__hipnoTerapeutica");
+    if (modal.style.display === "none") {
+      modal.style.display = "block";
+      trapped = trapFocus(modal);
+    } else {
+      modal.style.display = "none";
+      trapped.onClose();
+    }
+  })
+  const toggleModal4 = ((e) => {
+    const modal = document.getElementById("modalContainer--longevidad");
+    if (modal.style.display === "none") {
+      modal.style.display = "block";
+      trapped = trapFocus(modal);
+    } else {
+      modal.style.display = "none";
+      trapped.onClose();
+    }
+  })

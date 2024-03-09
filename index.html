@@ -65,25 +65,69 @@
                     </nav>
                 </div>
 
-                <div class="titulo">
+                <button onclick="toggleModal1()"> ¿Quién es Kike Millan?</button>
+
+                <!-- <div class="titulo">
                     <h2 class="title">¿QUIÉN ES KIKE MILLÁN?</h2>
-                </div>
-                <div class="contenedor">
+                </div> -->
+                <div class="modal__KikeMillan" id="modal__KikeMillan" style="display: none;">
 
                     <div class="texto1">
-                        <p>El Dr. Embajador Kike Millán cuenta con más de 22 años de experiencia, 6 maestrías de Reiki,
-                            (Reiki
-                            Occidental, oriental, Tibetano, karuna, Takata hawaiano, genday andino Munayki ), Munay lo,
-                            PNL,
-                            Chi
-                            kung, Pranayama, Hipno-terapeuta, Reiki- terapeuta, Dígito- terapeuta, ángelo-terapeuta,
-                            constelador
-                            familiar por medio de hipnosis, Locutor, Conductor de televisión, Teólogo, Experto en
-                            energía y
-                            ley
-                            de atracción, método Aureliano, con el del Dr. Brian Weiss y el del Dr. Michel Newton, en la
-                            escuela
-                            tradicional de Hipnosis.
+                        <p>Desde muy chico, el Dr. Kike Millán demostraba ya habilidades mentales
+                            superiores a la del resto de los niños, fue a los 8 años que su padre descubrió su talento y
+                            lo inicio en los misterios de las Enseñanzas de la
+                            Mente Humana.
+                        </p>
+                        <p>
+                            Despues de innumerables viajes de aprendizaje y noviciado por
+                            Mexico durante su juventud, el Dr. Kike Millán regresa a establecerse en la ciudad de
+                            Monterrey, al Norte de Mexico, de donde es originario.
+                        </p>
+                        <p>
+                            Desde entonces han forjado una trayectoria profesional de más de 25 años
+                            en el mundo de las Terapias Alternativas, como la Hipnoterapeuta y el Reiki,
+                            entre otras.
+                            Además de esto, se ha desempeñado como Conferencista, Actor de Teatro y
+                            participando activamente en Radio y Televisión en la ciudad de Monterrey.
+                            Su incansablemente vocación lo ha llevado a recorrer todo México, Estados
+                            Unidos y durante el 2022 tuvo la oportunidad de recorrer todo el continente
+                            americano desde San Francisco, California hasta Machu Picchu, Perú. Todo
+                            esto para ayudar a niños, adolescentes y personas de la tercera edad.
+                            En su más reciente viaje lo llevo un mes a Colombia donde tuvo la
+                            oportunidad de ayudar a comunidades tanto en Bogotá como en
+                            Ibagué, la ciudad musical. Y finalmente debuta como autor con el libro
+                            ¨Metodo Kike Millán de Hipnosis Terapéutica¨ de Editorial HGM.
+
+                        </p>
+                        <p>
+                            El Dr. Embajador Kike Millán cuenta con más de 22 años de experiencia, 6
+                            maestrías de Reiki, (Reiki Occidental, oriental, Tibetano, Karuna, Takata
+                            hawaiano, Genday andino Munayki), Munay lo, PNL, Chi kung, Pranayama,
+                            Hipnoterapeuta, Reiki- terapeuta, Dígito- terapeuta, Ángelo-terapeuta,
+                            Constelador Familiar, por medio de Hipnosis, Locutor, Conductor de
+                            televisión, Teólogo, Experto en energía y ley de atracción, creador del
+                            Método Millán de Hipnosis Holística con más de 1000 alumnos de taller de
+
+                        </p>
+                        <p>
+                            Hipnosis Terapéutica. Doctor en Humanidades, Universidad Claustro
+                            Doctoral, nombrado de las 10 personas más destacadas en 2021 en labor
+                            social por la Asociación Forjadores de México
+                            Nombrado Embajador Humanitarios el 11 de Dic 2022 por el Claustro Doctoral
+                            Internacional en el Supremo Tribunal de Justicio del Estado de Jalisco en
+                            Guadalajara Jalisco. Galardonado 2022 por trayectoria profesional y líder
+                            social por la asociación Forjadores de Mexico. Con más 22 años de trayectoria
+                            aportando ayuda a la Humanidad.
+
+                        </p>
+                        <p>Embajador Humanitario 2021 vitalicio de
+                            la buena voluntad y benevolencia. Galardonado con la distinción Trilogía de
+                            Oro en el Auditorio Nacional el 13 de Noviembre 2023 por liderazgo Social, investidura como
+                            Doctor de Doctores por la Universidad de Morelos en el Castillo 🏰 de Chapultepec, Premio
+                            Trilogía de Oro por más de 25 años de trayectoria Profesional
+                            Activista Humanitario. Nombrado Doctor de Doctores por la Universidad de
+                            Morelos.
+
 
                         </p>
 
@@ -92,7 +136,7 @@
                         <img class="fotoKike " src="./img/3Kike" alt="kike3">
                     </div>
                 </div>
-                <div class="contenedor">
+                <!-- <div class="contenedor">
                     <p class="texto1">Creador de método MILLAN de hipnosis terapéutica, doctor en humanidades,
                         Universidad
                         Claustro Doctoral, nombrado de las 10 personas más destacadas en 2021 en labor social por la
@@ -104,7 +148,7 @@
                         de
                         trayectoria aportando ayuda a la Humanidad.
                         Embajador Humanitario 2021 vitalicio de la buena voluntad y benevolencia.</p>
-                </div>
+                </div> -->
                 <div class="titulo">
                     <h2 class="title" style="text-transform: uppercase;">Retiros</h2>
                 </div>
@@ -121,7 +165,7 @@
                             </svg>
                         </button>
                     </div>
-                    <video class="video1" controls="true "id="intro" autoplay="true" muted="true" loop="true">
+                    <video class="video1" controls="true " id="intro" autoplay="true" muted="true" loop="true">
                         <source id="mp4_src" src="./video/introKike2.mp4" type="video/mp4">
                         <!-- <source id="ogg_src"  src="mov_bbb.ogg" type="video/ogg"> -->
                         Tu explorador no soporta este formato de video.
@@ -163,44 +207,88 @@
 
                 <div class="cards">
 
+                    <button onclick="toggleModal2()">¿Qué es la hipnosis?</button>
+
                     <div class="card"
                         style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
-                        <div class="titulo">
+                        <div id="modal__hipnosis" style="display: none;">
 
-                            <h2 class="title">¿Qué es la hipnosis?</h2>
-                        </div>
-                        <img src="./img/hipno_kike.jpg" class="card-img-top" alt="astral">
-                        <div class="card-body">
-                            <p class="card-text">La hipnosis es un estado de adormecimiento o ensoñación parecido al del
-                                sueño en el que somos onscientes de lo que sucede:
+                            <img src="./img/hipno_kike.jpg" class="card-img-top" alt="astral">
+                            <p>
+
+                                La hipnosis es un estado de adormecimiento o ensoñación parecido al del
+                                sueño: En el que somos conscientes de lo que sucede, escuchamos los ruidos,
+                                podemos abrir los ojos, caminar, aumentar la atención hacia determinados
+                                pensamientos que nos interesan. Decidimos qué decir podemos salir del
+                                estado hipnótico cuando se desea. Podemos recordar eventos olvidados,
+                                reprogramar conductas, potenciar recursos, Avivar facultades para aliviarnos
+                                y calmar dolores.
+                            </p>
+                            <p>
+
+                                ¿Cuáles son los mitos y realidades de la hipnosis?
+                                Es la herramienta más rápida y eficaz de la psicología para tratar alteraciones
+                                de la salud mental y emocional. Nadie puede ser hipnotizado en contra de su
+                                voluntad.
+                            </p>
+                            <p>
+
+                                Durante la hipnosis el sujeto es dueño de sí mismo; sólo hace
+                                aquello que acepta hacer. Por lo general, a medida que el terapeuta le va
+                                solicitando que recuerde la causa de un determinado síntoma, percibe una
+                                sensación, imagen o pensamiento relacionado de alguna manera con el tema.
+                                Así, poco a poco, se le va llevando cada vez más profundo en el trance,
+                                procurando que no analice conscientemente lo que está diciendo.
+                            </p>
+                            <p>
+
+                                Presenta
+                                resistencia a la hipnosis quien es muy racional, está esperando "conectarse",
+                                tiene ansiedad por saber en qué momento lo hipnotizan, o quiere que lo
+                                toquen mágicamente y quede profundamente dormido, y que cuando
+                                Dr. Kike Millán. Monterrey, Mexico
+                                kikemillan.com
+                                despierte esté como nuevo: sin miedos sin resentimientos sano de todas sus
+                                dolencias adicciones. También presenta dificultad quien llega a la terapia
+                                acompañado de alguien en quien no confía sus secretos también presenta
+                                dificultad aquella persona que tiene prisa o que tiene que ir a llegar a un
+                                compromiso por eso se le pide a la gente que vengan relajadas y con tiempo.
+                            </p>
+                            <p>
+
+                                La Hipnosis Terapéutica Es el gran poder de vivir sin límites.
+                                Cuáles son las recomendaciones para tomar la terapia de hipnosis?
                             <ul>
-                                <li>Escuchamos los ruidos</li>
-                                <li>Podemos abrir los ojos</li>
-                                <li>Caminar</li>
-                                <li>Aumentar la atención hacia determinados pensamientos que nos interesan</li>
-                                <li>Decidimos qué decir</li>
-                                <li>Podemos salir del estado hipnótico cuando queramos</li>
-                                <li>Podemos recordar eventos olvidados</li>
-                                <li>Reprogramar conductas</li>
-                                <li>Potenciar recursos</li>
-                                <li>Facultades para aliviarnos</li>
-                                <li>Calmar dolores</li>
-                            </ul>
+                                <li>
+                                    No tomar café ni cafeína 3 horas antes
 
+                                </li>
+                                <li>
+                                    Utilizar con ropa cómoda de calzado cómodo
+
+                                </li>
+                                <li>
+                                    Indispensable higiene personal.
+
+                                </li>
+                            </ul>
+                            </p>
                         </div>
                     </div>
 
+                    <button onclick="toggleModal3()">¿Qué es la hipnósis terapéutica?</button>
+                    <div class="card" id="modal__hipnoTerapeutica" style="display: none;">
+                        <!--                         
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;"> -->
 
-                    <div class="card"
-                        style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
                         <!-- <div class="titulo">
                             <h2 class="title">¿Cuáles son los mitos y realidades de la hipnosis?</h2>
-
+                            
                         </div> -->
                         <img src="./img/kikeFlordelaVida.jpg" class="card-img-top" alt="hipnosis">
-                        <div class="card-body">
-                            <p class="card-text">
-
+                        
+                            <!-- <p class="card-text"> -->
+                            <p>
                             <ul>
                                 <li>Es la herramienta más rápida y eficaz de la psicología para tratar alteraciones de
                                     la
@@ -264,246 +352,247 @@
                             Terapéutica
                             Es
                             el gran poder de vivir sin límites.</p>
-                        </div>
-                    </div>
-
-                    <div class="card"
-                        style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
-                        <div class="titulo">
-                            <h2 class="title">¿Para qué sirve la Hipnoterapia?</h2>
-
-                        </div>
-                        <img src="./img/zen3A.jpeg" class="card-img-top" alt="terapia">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Es una terapia muy amable que no tiene ningún efecto secundario negativo y ayuda en
-                                múltiples
-                                ideopatías como:
-                            <ul>
-                                <li>Concentración</li>
-                                <li>Aprendizaje</li>
-                                <li>Memoria</li>
-                                <li>Fobias</li>
-                                <li>Sexualidad</li>
-                                <li>Orientación a la felicidad, superando el duelo </li>
-                                <li>Comunicación con tu Ángel</li>
-                                <li>Ansiedad</li>
-                                <li>Depresión</li>
-                                <li>Dolor</li>
-                                <li>Traumas</li>
-                                <li>Quitar hábitos negativos</li>
-                                <li>Terapia del perdón</li>
-                                <li>Constelación</li>
-                                <li>Se puede ir a vidas pasadas</li>
-                                <li>Idiomas</li>
-                                <li>Deporte</li>
-                                <li>Estudios</li>
-                                <li>Problemas crónicos</li>
-                                <li>Cerrar círculos</li>
-                                <li>Conocer la misión de tu vida</li>
-                                <li>Se utiliza como herramienta en la sanación de fobias</li>
-                                <li>Miedos</li>
-                                <li>Tristezas</li>
-                                <li>Angustia</li>
-                                <li>Anorexia</li>
-                                <li>Bulimia</li>
-                                <li>Baja autoestima e inseguridad</li>
-                                <li>Complejos</li>
-                                <li>Migraña</li>
-                                <li>Obesidad</li>
-                                <li>Obsesiones</li>
-                                <li>Alergias</li>
-                                <li>Adicciones</li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="card"
-                        style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
-                        <div class="titulo">
-                            <h2 class="title">Medallones cuánticos, intencionados con reiki por Kike Millán Master
-                                Reiki.
-                            </h2>
-                            <h3 class="subtitle">Siéntete con más energía y una mejor salud.</h3>
-                        </div>
-                        <img src="./img/medallones.jpeg" class="card-img-top" alt="medallones">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Ahora puedes sentirte mas saludable y con una mayor vitalidad, al neutralizar las
-                                energías
-                                negativas y
-                                volver a cargar el campo de energía de tu cuerpo con las frecuencias de energía
-                                correctas,
-                                utilizando
-                                nuestros productos.
-
-                                Mediante el uso de la Nanotecnología junto a minerales naturales unidos
-                                estructuralmente,
-                                los
-                                medallones
-                                cuánticos bioenergéticos
-                                restauran el equilibrio y la armonía del cuerpo.
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card"
-                        style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
-                        <div class="titulo">
-                            <h2 class="title">¿De qué están hechos los medallones cuánticos?
-                            </h2>
-                        </div>
-                        <img src="./img/medallones2.jpeg" class="card-img-top" alt="medallones2">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Son medallones basados en minerales, principalmente de un elemento llamado GERMANIO, el
-                                cual
-                                es
-                                un mineral
-                                extraído de la piedra volcánica siendo muy bondadoso para la salud.
-
-                            </p>
-
-                            <p>
-
-                                Tambien cuenta con sensores como lo son: Iones negativos, infrarrojos e imanes de
-                                neodimio.
-
-                                BENEFICIOS principales:
-                            <ul>
-                                <li>Ayuda en personas que sufren de depresión, ansiedad y estrés</li>
-                                <li>Mejora de la circulación sanguínea</li>
-                                <li>Mejor resistencia y fuerza</li>
-                                <li>Mejora los sistemas inmunes y endocrinos</li>
-                                <li>Mejora la nutrición celular y la desintoxicación</li>
-                                <li>Reduce la inflamaciones por dolores en áreas del cuerpo.</li>
-                                <li>Una mente más tranquila y una mayor concentración</li>
-                                <li>Alivia el dolor de migrañas..dolores de cabeza.</li>
-                                <li>Energiza las células sanguíneas</li>
-                                <li>Neutraliza las energías dañinas</li>
-                                <li>Refuerza el campo de bioenergía de su cuerpo para protegerlo de las ondas
-                                    electromagnéticas.
-                                </li>
-                            </ul>
-
-                            Mejorando la circulación y equilibrando el campo de bioenergía del cuerpo.
-
-                            </p>
-                            <p>
-
-                                Nuestros cuerpos están hechos de energía, para lograr y mantener una salud vibrante,
-                                debemos
-                                proteger nuestra frecuencia y flujo de
-                                energía (o
-                                circulación) en todo el cuerpo.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card"
-                        style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
-                        <div class="titulo">
-                            <h2 class="title">Evidencia de flujo sanguíneo mejorado en el cuerpo
-                            </h2>
-                        </div>
-                        <img src="./img/medallones3.jpeg" class="card-img-top" alt="medallones3">
-                        <div class="card-body">
-                            <p class="card-text">
-
-                                Las células sanguíneas microscópicamente se oxigenan después de usar algún producto como
-                                lo
-                                son nuestros
-                                medallones o pulseras.
-                            </p>
-                            <p>
-                                Después de usar nuestros productos, las células sanguíneas se mueven y el oxígeno puede
-                                ser
-                                entregado de
-                                manera más efectiva al cuerpo.
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card"
-                        style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
-                        <div class="titulo">
-                            <h2 class="title">Instrucciones sobre el uso del medallón de energía.
-                            </h2>
-                        </div>
-                        <img src="./img/kikeFinal.jpeg" class="card-img-top" alt="medallones4">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Los medallones son recargables ya vienen preparados con la tecnología mas avanzada.</p>
-                            <p>
-                                Use colgante en el plexus solar o directo en áreas específicas por ejemplo: rodilla,
-                                espalda,
-                                hombro,
-                                tobillo, etc. Para aliviar la rigidez o el dolor.
-                            </p>
-                            <p>
-                                Los niños y atletas que usan el medallón pueden mejorar su energía, flexibilidad y
-                                niveles de
-                                concentración. Los niños que usan el medallón han mejorado el enfoque mental y se
-                                desempeñan mejor en
-                                clase. Los atletas pueden lograr un mejor rendimiento con una mayor flexibilidad y
-                                concentración.
-                            </p>
-                            <p>
-
-                                Cada modificador cuantico cuenta con su “Certificado de autenticidad”
-                                El cual viene de regalo con carga de energía también.
-
-                            </p>
-
-                        </div>
+                        
                     </div>
                 </div>
 
-                <div class="container">
-                    <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100071805180848&mibextid=LQQJ4d">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
+                    <div class="titulo">
+                        <h2 class="title">¿Para qué sirve la Hipnoterapia?</h2>
 
-                        <h2>Incienso Palo santo</h2>
-                    </a>
-                    <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100064020492373&mibextid=LQQJ4d">
+                    </div>
+                    <img src="./img/zen3A.jpeg" class="card-img-top" alt="terapia">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Es una terapia muy amable que no tiene ningún efecto secundario negativo y ayuda en
+                            múltiples
+                            ideopatías como:
+                        <ul>
+                            <li>Concentración</li>
+                            <li>Aprendizaje</li>
+                            <li>Memoria</li>
+                            <li>Fobias</li>
+                            <li>Sexualidad</li>
+                            <li>Orientación a la felicidad, superando el duelo </li>
+                            <li>Comunicación con tu Ángel</li>
+                            <li>Ansiedad</li>
+                            <li>Depresión</li>
+                            <li>Dolor</li>
+                            <li>Traumas</li>
+                            <li>Quitar hábitos negativos</li>
+                            <li>Terapia del perdón</li>
+                            <li>Constelación</li>
+                            <li>Se puede ir a vidas pasadas</li>
+                            <li>Idiomas</li>
+                            <li>Deporte</li>
+                            <li>Estudios</li>
+                            <li>Problemas crónicos</li>
+                            <li>Cerrar círculos</li>
+                            <li>Conocer la misión de tu vida</li>
+                            <li>Se utiliza como herramienta en la sanación de fobias</li>
+                            <li>Miedos</li>
+                            <li>Tristezas</li>
+                            <li>Angustia</li>
+                            <li>Anorexia</li>
+                            <li>Bulimia</li>
+                            <li>Baja autoestima e inseguridad</li>
+                            <li>Complejos</li>
+                            <li>Migraña</li>
+                            <li>Obesidad</li>
+                            <li>Obsesiones</li>
+                            <li>Alergias</li>
+                            <li>Adicciones</li>
+                        </ul>
 
-                        <h2>Medallones Cuánticos Reiki</h2>
-                    </a>
-                    <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100077635306939&mibextid=LQQJ4d">
-
-                        <h2>Playeras REIKI</h2>
-                    </a>
-                    <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100063640953633&mibextid=LQQJ4d">
-
-                        <h2>Velas REIKI</h2>
-                    </a>
-                    <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100063556359433&mibextid=LQQJ4d">
-
-                        <h2>Cursos REIKI</h2>
-                    </a>
-                    <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100057440478391&mibextid=LQQJ4d">
-
-                        <h2>Pulseras REIKI</h2>
-                    </a>
+                    </div>
                 </div>
-            </main>
 
-            <footer>
-                <div class="links">
-                    <a href="https://www.barras-designs.com.mx/">
-                        <div class="textoFooter">
-                            Barras Designs todos los derechos reservados.
-                        </div>
-                        <div class="imagenFooter">
-                            <img class="icon" src="./img/bdLogo.png" alt="BDLogo">
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
+                    <div class="titulo">
+                        <h2 class="title">Medallones cuánticos, intencionados con reiki por Kike Millán Master
+                            Reiki.
+                        </h2>
+                        <h3 class="subtitle">Siéntete con más energía y una mejor salud.</h3>
+                    </div>
+                    <img src="./img/medallones.jpeg" class="card-img-top" alt="medallones">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Ahora puedes sentirte mas saludable y con una mayor vitalidad, al neutralizar las
+                            energías
+                            negativas y
+                            volver a cargar el campo de energía de tu cuerpo con las frecuencias de energía
+                            correctas,
+                            utilizando
+                            nuestros productos.
 
-                        </div>
-                    </a>
+                            Mediante el uso de la Nanotecnología junto a minerales naturales unidos
+                            estructuralmente,
+                            los
+                            medallones
+                            cuánticos bioenergéticos
+                            restauran el equilibrio y la armonía del cuerpo.
+
+                        </p>
+                    </div>
                 </div>
-            </footer>
+
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
+                    <div class="titulo">
+                        <h2 class="title">¿De qué están hechos los medallones cuánticos?
+                        </h2>
+                    </div>
+                    <img src="./img/medallones2.jpeg" class="card-img-top" alt="medallones2">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Son medallones basados en minerales, principalmente de un elemento llamado GERMANIO, el
+                            cual
+                            es
+                            un mineral
+                            extraído de la piedra volcánica siendo muy bondadoso para la salud.
+
+                        </p>
+
+                        <p>
+
+                            Tambien cuenta con sensores como lo son: Iones negativos, infrarrojos e imanes de
+                            neodimio.
+
+                            BENEFICIOS principales:
+                        <ul>
+                            <li>Ayuda en personas que sufren de depresión, ansiedad y estrés</li>
+                            <li>Mejora de la circulación sanguínea</li>
+                            <li>Mejor resistencia y fuerza</li>
+                            <li>Mejora los sistemas inmunes y endocrinos</li>
+                            <li>Mejora la nutrición celular y la desintoxicación</li>
+                            <li>Reduce la inflamaciones por dolores en áreas del cuerpo.</li>
+                            <li>Una mente más tranquila y una mayor concentración</li>
+                            <li>Alivia el dolor de migrañas..dolores de cabeza.</li>
+                            <li>Energiza las células sanguíneas</li>
+                            <li>Neutraliza las energías dañinas</li>
+                            <li>Refuerza el campo de bioenergía de su cuerpo para protegerlo de las ondas
+                                electromagnéticas.
+                            </li>
+                        </ul>
+
+                        Mejorando la circulación y equilibrando el campo de bioenergía del cuerpo.
+
+                        </p>
+                        <p>
+
+                            Nuestros cuerpos están hechos de energía, para lograr y mantener una salud vibrante,
+                            debemos
+                            proteger nuestra frecuencia y flujo de
+                            energía (o
+                            circulación) en todo el cuerpo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
+                    <div class="titulo">
+                        <h2 class="title">Evidencia de flujo sanguíneo mejorado en el cuerpo
+                        </h2>
+                    </div>
+                    <img src="./img/medallones3.jpeg" class="card-img-top" alt="medallones3">
+                    <div class="card-body">
+                        <p class="card-text">
+
+                            Las células sanguíneas microscópicamente se oxigenan después de usar algún producto como
+                            lo
+                            son nuestros
+                            medallones o pulseras.
+                        </p>
+                        <p>
+                            Después de usar nuestros productos, las células sanguíneas se mueven y el oxígeno puede
+                            ser
+                            entregado de
+                            manera más efectiva al cuerpo.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card"
+                    style="background-color:var(--cardbackground-color)!important; text-shadow:0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;">
+                    <div class="titulo">
+                        <h2 class="title">Instrucciones sobre el uso del medallón de energía.
+                        </h2>
+                    </div>
+                    <img src="./img/kikeFinal.jpeg" class="card-img-top" alt="medallones4">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Los medallones son recargables ya vienen preparados con la tecnología mas avanzada.</p>
+                        <p>
+                            Use colgante en el plexus solar o directo en áreas específicas por ejemplo: rodilla,
+                            espalda,
+                            hombro,
+                            tobillo, etc. Para aliviar la rigidez o el dolor.
+                        </p>
+                        <p>
+                            Los niños y atletas que usan el medallón pueden mejorar su energía, flexibilidad y
+                            niveles de
+                            concentración. Los niños que usan el medallón han mejorado el enfoque mental y se
+                            desempeñan mejor en
+                            clase. Los atletas pueden lograr un mejor rendimiento con una mayor flexibilidad y
+                            concentración.
+                        </p>
+                        <p>
+
+                            Cada modificador cuantico cuenta con su “Certificado de autenticidad”
+                            El cual viene de regalo con carga de energía también.
+
+                        </p>
+
+                    </div>
+                </div>
         </div>
+
+        <div class="container">
+            <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100071805180848&mibextid=LQQJ4d">
+
+                <h2>Incienso Palo santo</h2>
+            </a>
+            <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100064020492373&mibextid=LQQJ4d">
+
+                <h2>Medallones Cuánticos Reiki</h2>
+            </a>
+            <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100077635306939&mibextid=LQQJ4d">
+
+                <h2>Playeras REIKI</h2>
+            </a>
+            <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100063640953633&mibextid=LQQJ4d">
+
+                <h2>Velas REIKI</h2>
+            </a>
+            <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100063556359433&mibextid=LQQJ4d">
+
+                <h2>Cursos REIKI</h2>
+            </a>
+            <a class="tarjeta" href="https://www.facebook.com/profile.php?id=100057440478391&mibextid=LQQJ4d">
+
+                <h2>Pulseras REIKI</h2>
+            </a>
+        </div>
+        </main>
+
+        <footer>
+            <div class="links">
+                <a href="https://www.barras-designs.com.mx/">
+                    <div class="textoFooter">
+                        Barras Designs todos los derechos reservados.
+                    </div>
+                    <div class="imagenFooter">
+                        <img class="icon" src="./img/bdLogo.png" alt="BDLogo">
+
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
     </div>
 
     </div>
