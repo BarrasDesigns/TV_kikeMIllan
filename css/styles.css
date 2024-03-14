@@ -1,6 +1,6 @@
 :root {
     --letraTexto: rgba(255, 255, 255, 1);
-    --fondo2: rgba(255, 255, 255, 0.2);
+    --fondo2:rgba(43, 40, 40, 0.2); 
     --enlaces: rgb(162, 54, 184);
     --enlacesHover: rgba(190, 53, 218, 0.4);
     --cardbackground-color: transparent;
@@ -9,8 +9,8 @@
 
 /* GLOBALES */
 .fondo {
-    background-image: url(../img/purplegalaxy2.jpg);
-    background-repeat: repeat-y;
+    background-image: url(../img/purpleGalaxy3.jpg);
+    background-repeat: repeat;
     height: 100%;
     width: 100%;
 
@@ -110,7 +110,12 @@ body {
     text-shadow: 0px 0px 3px rgb(157, 157, 157), 0px 0px 5px !important;
     text-align: center;
 }
-
+.botones{
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
 
 /* HOME*/
 .home {
@@ -436,8 +441,9 @@ a {
 
 /* VIDEO INTRO */
 button {
-    border-radius: 50% !important;
+    border-radius: 7px !important;
     background-color: var(--enlaces);
+    color: white;
 }
 
 button:hover {

@@ -76,7 +76,7 @@ function addEvent(element, evnt, funct){
     }
   })
   const toggleModal4 = ((e) => {
-    const modal = document.getElementById("modalContainer--longevidad");
+    const modal = document.getElementById("modal__medallones");
     if (modal.style.display === "none") {
       modal.style.display = "block";
       trapped = trapFocus(modal);
